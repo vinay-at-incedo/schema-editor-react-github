@@ -1,0 +1,224 @@
+.color-container {
+  border: 1px solid lightgray;
+  font-size: 12px;
+}
+.node {
+  cursor: pointer;
+}
+
+.overlay {
+  background-color: #eee;
+}
+
+.node circle {
+  fill: #fff;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+.node text {
+  font-size: 10px;
+  font-family: sans-serif;
+}
+
+.link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 1.5px;
+}
+
+.templink {
+  fill: none;
+  stroke: red;
+  stroke-width: 3px;
+}
+
+.ghostCircle.show {
+  display: block;
+}
+
+.ghostCircle,
+.activeDrag .ghostCircle {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.button {
+  border: 1px solid black;
+  margin-bottom: 1px;
+}
+
+.found {
+  fill: #ff4136;
+  stroke: #ff4136;
+}
+
+.search {
+  float: left;
+  font: 10px sans-serif;
+  width: 40%;
+}
+
+ul.select2-results {
+  max-height: 100px;
+}
+
+.select2-container,
+.select2-drop,
+.select2-search,
+.select2-search input {
+  font: 10px sans-serif;
+}
+
+#block_container {
+  display: inline;
+  margin-bottom: 200px;
+}
+
+foreignObject {
+  visibility: hidden;
+  color: #ff4136;
+  font: 14px sans-serif;
+  overflow: visible;
+  font-weight: normal;
+  font-family: "Courier New", Courier, monospace;
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+foreignObject div {
+  height: 20px;
+  width: max-content;
+  z-index: 100;
+}
+.node:hover foreignObject {
+  visibility: visible;
+  opacity: 1;
+}
+
+#modal-object-name,
+#modal-object-lineage,
+#modal-object-occurences,
+#modal-object-noOfChildren {
+  font-weight: bold;
+}
+
+.reveal-modal {
+  max-height: initial;
+  /* height:500px;  */
+  height: 470px;
+  /* height: 70%; */
+  overflow-y: scroll;
+}
+
+.remove {
+  float: right;
+}
+
+#field-metadata-list li,
+#config-field-list li {
+  padding: 5%;
+  background-color: aliceblue;
+  margin-bottom: 3%;
+}
+
+#rectangle {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+#mandatory-container,
+#optional-container {
+  display: inline-block;
+  width: 49%;
+  height: 100%;
+  background-color: #051b34;
+  position: absolute;
+  overflow: scroll;
+  text-align: center;
+}
+
+#optional-container {
+  left: 50%;
+}
+
+.connector-circle {
+  cursor: pointer;
+}
+
+.draggable {
+  cursor: move;
+  position: absolute;
+  user-select: none;
+}
+
+#context-menu {
+  position: fixed;
+  z-index: 10000;
+  width: 200px;
+  display: none;
+}
+
+#context-menu.visible {
+  display: block;
+}
+
+#context-menu .item {
+  padding: 8px 10px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+#context-menu .item:hover {
+  background: floralwhite;
+}
+
+#legendColorTable {
+  position: absolute;
+  right: 5%;
+  top: 12%;
+}
+
+.labelColor {
+  height: 10px;
+  width: 100px;
+}
+
+.single {
+  background-color: #4caf50;
+}
+
+.intermediate {
+  background-color: #f0ad4e;
+}
+
+.multi {
+  background-color: #2196f3;
+}
+
+#flagTable {
+  width: 100%;
+  margin-top: 2%;
+}
+
+label .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+label:hover .tooltiptext {
+  visibility: visible;
+}

@@ -1,0 +1,4 @@
+[
+  { "name": "Test Required Metadata ", "required": true },
+  { "name": "Test Not Required Metadta", "required": false }
+]
